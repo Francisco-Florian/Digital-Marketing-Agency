@@ -277,8 +277,12 @@ footer p{
 }
 
 #contactUsDiv > article > ul{
-    display: grid;
-    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactUsDiv > article > ul > li{
+    font-family: var(--open-sans);
 }
 
 #contactUsDiv > form{
