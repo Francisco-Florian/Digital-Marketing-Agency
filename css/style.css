@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Générale */
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --green: #006A19;
+    --blue: #02797E;
+    --grey: #F2F4F2;
+    --roboto: 'Roboto', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --permanent-marker: 'Permanent Marker', cursive;
+}
+
+h1,
+h2{
+    font-family: var(--permanent-marker);
+    font-size: 37px;
+    color: var(--green);
+    font-weight: 400;
+}
+
+h3{
+    font-family: var(--permanent-marker);
+    font-size: 21px;
+    color: var(--blue);
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3 ease-in-out
+}
+
+a:hover{
+    transition: all 0.3 ease-in-out;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--roboto);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+p{
+    font-family: var(--open-sans);
+    font-weight: 400;
+    color: var(--black);
+}
+
+.green{
+    color: var(--green);
+}
+
+.blue{
+    color: var(--blue);
+}
+
+.blue_bgc{
+    background-color: var(--blue);
+}
+
+.grey_bgc{
+    background-color: var(--grey);
+}
+
+.container_1440{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.container_1140{
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+
+/* Header */
+
+header{
+    display: grid;
+    justify-items: center;
+}
+
+header img{
+    padding-top: 20px;
+}
+
+
+nav > ul{
+    display: flex;
+    gap: 80px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+nav a:hover{
+    color: var(--green);
+}
+
+.burgerMenu{
+    display: none;
+}
+
+/* footer */
+
+footer{
+    text-align: center;
+    padding-top: 50px !important;
+}
+
+footer p{
+    color: var(--blue);
+}
+
+
+/* section about-us */
+
+#about_us > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 50px 15px;
+    align-items: center;
+}
+
+#about_us img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.divHr{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hr{
+    height: 0;
+    border: 2px solid var(--green);
+    width: 80px;
+}
+
+#aboutArticle1{
+    display: grid;
+    gap: 40px;
+}
+
+.greenLink{
+    padding: 12px 24px;
+    background-color: var(--green);
+    border-radius: 3px;
+    color: var(--white);
+    justify-self: center;
+}
+
+
+/* section our skills */
+
+#ourSkills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+#ourSkills > div{
+    grid-column: 1/5;
+    padding-bottom: 60px;   
+}
+
+#ourSkills article{
+    display: grid;
+    gap: 40px;
+    padding: 10px;
+}
+
+.border_right{
+    border-right: 2px solid var(--green);
+}
+
+
+/* section our client */
+
+#ourClient{
+    padding: 50px 15px;
+}
+
+#ourClient > div{
+    display: grid;
+    gap: 70px;
+}
+
+#ourClient > div >article{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+#ourClient > div >article img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#white hr{
+    border: 2px solid var(--white);
+}
+
+#white h2{
+    color: var(--white);
+}
+
+
+/* section our Project */
+
+#ourProject{
+    display: grid;
+    gap: 40px;
+    justify-items: center;
+    padding: 50px 15px;
+}
+
+#ourProject article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+
+#ourProject article img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* section contact */
+
+#contactUs > div{
+    display: grid;
+    gap: 40px;
+    padding: 50px 15px;
+}
+
+#contactUsDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#contactUsDiv > article{
+    display: grid;
+    gap: 20px;
+}
+
+#contactUsDiv > article > ul{
+    display: grid;
+    gap: 15px;
+}
+
+#contactUsDiv > form{
+    display: grid;
+    gap: 20px;
+}
+
+#contactUsDiv > form input,
+#contactUsDiv > form label,
+#contactUsDiv > form textarea{
+    font-family: var(--open-sans);
+    font-weight: 400;
+    color: var(--black);
+    font-size: 16px;
+}
+
+#contactUsDiv > form input,
+#contactUsDiv > form textarea{
+    border: 1px solid #69727D;
+    border-radius: 3px;
+    padding: 10px 17px 10px 17px;
+}
+
+#contactUsDiv > form input:focus,
+#contactUsDiv > form textarea:focus{
+    outline: none;
+}
+
+#contactUsDiv > form button{
+    border: none;
+    cursor: pointer;
+    justify-self: start;
+}
+
+
+
+/* responsive Mobile */
+
+@media screen and (max-width: 767px){
+
+    /* header */
+
+    header{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        padding-bottom: 40px !important;
+    }
+
+    header img{
+        width: 50%;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .burgerMenu{
+        display: block;
+    }
+
+
+    /* section about us */
+
+    #about_us > div{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
+    }
+
+
+    /* section our skills */
+
+    #ourSkills{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }   
+
+    #ourSkills > div{
+        grid-column: inherit;
+    }
+
+    .hr{
+        width: 60px;
+    }
+
+    .border_right{
+        border-right: none;
+    }
+
+
+    /* section our client */
+
+    #ourClient > div >article{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* section our project */
+
+    #ourProject article{
+        grid-template-columns: 1fr;
+    }
+
+    #ourProject > div:nth-child(1) > h2:nth-child(2){
+        font-size: 30px;
+    }
+
+
+    /* section contact */
+
+    #contactUs > div{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    #contactUsDiv{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
